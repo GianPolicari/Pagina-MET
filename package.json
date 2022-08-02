@@ -2,7 +2,7 @@
   "name": "pagina-met",
   "version": "1.0.0",
   "description": "Esta es una página dedicada a un E-commerce de un centro de estetica (Real) de Depilación definitiva.",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
