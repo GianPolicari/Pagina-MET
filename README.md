@@ -1,4 +1,4 @@
-Esta es una página dedicada a un E-commerce de un centro de estetica (Real) de Depilcaion definitiva.
+Esta es una página dedicada a un E-commerce de un centro de estetica (Real) de Depilación definitiva.
 
 Acerca de mi:
 
