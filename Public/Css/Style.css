@@ -1,10 +1,219 @@
-/*Home */
-.header-nav{
-    background-color: rgba(187, 227, 230,0.5);
-};
-.footer-nav{
+* {  
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+/*Colores: Verde #88E384
+           Violeta #B195EE 
+           Azul #03264C
+           Blanco #ffffff*/
 
-};
-.body-home{
+           /*Home */
+body{
+    font-family: 'Roboto';
+    color: #222222;
+    
+}
+.main-header{
+    background-color: #525D62;
+    padding: 20px;
 
-};
+}
+.logo{
+    width: 90px;
+}
+.copy-header{
+    font-weight: 400;
+    text-align: center;
+    padding: 10px 0;
+}
+.hamburguer-button{
+    background-color:#03264C;
+    color:#ffffff;
+    display: block;
+    max-width: 50px;
+    padding: 15px 0px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+}
+.main-navbar{
+    display: none;
+}
+.main-navbar ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+.main-navbar a{
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+}
+/*Footer*/
+ footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #4E4F5A;
+    padding: 10px;
+    margin-top: 200px;
+
+ }
+
+ /*Login register*/
+ .div-contenedor{
+    display: flex;
+    align-items: center;
+ }
+.body-login{
+    background-color: #18191D;
+}
+
+.login{
+    padding: 70px;
+    display: flex;
+    width: 50%;
+    margin:auto;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+/**/
+.card {
+    height: 300px;
+    width: 400px;
+    padding: 1.9rem 1.2rem;
+    text-align: center;
+    background: #2a2b38;
+   }
+   
+   /*Inputs*/
+   .field {
+    margin-top: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5em;
+    background-color: #1f2029;
+    border-radius: 4px;
+    padding: .5em 1em;
+   }
+   
+   .input-icon {
+    height: 1em;
+    width: 1em;
+    fill: #ffeba7;
+   }
+   
+   .input-field {
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: #d3d3d3;
+   }
+   
+   /*Text*/
+   .title {
+    margin-bottom: 1rem;
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #f5f5f5;
+   }
+   
+   /*Buttons*/
+   .btn {
+    margin: 1rem;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: .8em;
+    text-transform: uppercase;
+    padding: 0.6em 1.2em;
+    background-color: #ffeba7;
+    color: #5e6681;
+    box-shadow: 0 8px 24px 0 rgb(255 235 167 / 20%);
+    transition: all .3s ease-in-out;
+   }
+   
+   .btn-link {
+    color: #f5f5f5;
+    display: block;
+    font-size: .75em;
+    transition: color .3s ease-out;
+   }
+   
+   /*Hover & focus*/
+   .field input:focus::placeholder {
+    opacity: 0;
+    transition: opacity .3s;
+   }
+   
+   .btn:hover {
+    background-color: #5e6681;
+    color: #ffeba7;
+    box-shadow: 0 8px 24px 0 rgb(16 39 112 / 20%);
+   }
+   
+   .btn-link:hover {
+    color: #ffeba7;
+   }
+   
+
+ /*Media Querys*/
+
+ @media (min-width: 768px){
+    .main-header-top-bar{
+        display: flex;
+        justify-content: space-between;
+
+    }
+    .copy-header{
+        max-width: 350px;
+        text-align: right;
+    }
+    .hamburguer-button{
+        display: none;
+    }
+    .main-navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .main-navbar ul{
+        display: flex;
+    }
+    .main-navbar li{
+        margin: 0 5px;
+    }
+ }
+
+ @media (min-width: 1200px){
+    .main-header-top-bar, .main-navbar{
+        max-width: 1700px;
+        margin: auto;
+    }
+    .main-header-top-bar{
+        align-items: center;
+    }
+    .logo{
+        width: 90px;
+        margin-bottom: 10px;
+    }
+    .copy-header{
+        margin: 0;
+        max-width: none;
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .main-navbar li{
+        margin: 0 10px;
+    }
+    .main-navbar a{
+        font-size: 19px;
+    }
+
+ }
